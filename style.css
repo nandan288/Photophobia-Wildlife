@@ -1,0 +1,118 @@
+header {
+  padding: 7px 0; /* Shorthand for padding-top and padding-bottom */
+}
+
+a {
+  margin: 0;
+}
+
+h2 {
+  font-size: 2.5em;
+}
+
+h6 {
+  padding-top: 10px;
+}
+
+.navspace {
+  padding: 0 15px; /* Shorthand for padding-left and padding-right */
+}
+
+.custom-nav {
+  margin-left: auto;
+  gap: 20px; /* Added 'px' for correct spacing */
+  /* Uncomment and use flexbox if needed:
+  display: flex;
+  justify-content: flex-end;
+  */
+}
+
+.bg-body-tertiary {
+  --bs-bg-opacity: 0;
+}
+
+.navbar-brand {
+  padding: 10px;
+  font-size: 2em;
+}
+
+.nav-link {
+  margin-right: 30px; /* Adjust this value as needed */
+  font-size: 1.2em;
+}
+
+.main-title {
+  display: flex; /* Ensure flex properties are applied */
+  justify-content: center;
+  align-items: center;
+  font-size: 18vw; /* Responsive font-size based on viewport width */
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden; /* Ensure the overlay doesn't spill outside the container */
+}
+
+.image-container img {
+  display: block;
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Black background with 50% opacity */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white; /* Text color */
+  text-align: center;
+  padding: 20px; /* Optional padding */
+}
+
+.text {
+  font-size: 14vw; /* Responsive font-size based on viewport width */
+}
+
+.subscribe-section {
+  flex: 1;
+}
+
+.subscribe-form {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  width: 100%; /* Default width */
+}
+
+@media (min-width: 992px) {
+  /* For larger screens */
+  .subscribe-form {
+    max-width: 500px; /* Set max-width for the form */
+  }
+}
+
+.subscribe-form input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Centering the links section */
+.links-section {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  gap: 50px; /* Space between links */
+  flex-wrap: wrap; /* Ensure it wraps on smaller screens */
+}
+
+.nav-link:hover {
+  text-decoration: underline; /* Underline on hover */
+}
